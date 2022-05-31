@@ -14,12 +14,12 @@ rule.setConsequent(new IsClause("Иномарка", "нет"));
 inferenceEngine.AddRule(rule);
 
 rule = new Rule("Возраст автомобиля");
-rule.AddAntecedent(new GreaterClause("Значение возраста", "30"));
+rule.AddAntecedent(new GreaterClause("Значение возраста", "19"));
 rule.setConsequent(new IsClause("Подходящий возраст", "да"));
 inferenceEngine.AddRule(rule);
 
 rule = new Rule("Возраст автомобиля");
-rule.AddAntecedent(new LessClause("Значение возраста", "30"));
+rule.AddAntecedent(new LessClause("Значение возраста", "20"));
 rule.setConsequent(new IsClause("Подходящий возраст", "нет"));
 inferenceEngine.AddRule(rule);
 
@@ -29,7 +29,7 @@ rule.setConsequent(new IsClause("Подходящий пробег", "нет"));
 inferenceEngine.AddRule(rule);
 
 rule = new Rule("Возраст автомобиля");
-rule.AddAntecedent(new LessClause("Значение пробега", "50000"));
+rule.AddAntecedent(new LessClause("Значение пробега", "50001"));
 rule.setConsequent(new IsClause("Подходящий пробег", "да"));
 inferenceEngine.AddRule(rule);
 
